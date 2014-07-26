@@ -22,7 +22,7 @@ apt-get update
 # Install Some Basic Packages
 
 apt-get install -y build-essential curl dos2unix gcc git libmcrypt4 libpcre3-dev \
-make python2.7-dev python-pip re2c supervisor unattended-upgrades whois vim
+make python2.7-dev python-pip re2c supervisor unattended-upgrades whois vim htop
 
 # Install A Few Helpful Python Packages
 
@@ -168,3 +168,6 @@ sudo /etc/init.d/beanstalkd start
 # Write Bash Aliases
 
 cp /vagrant/aliases /home/vagrant/.bash_aliases
+
+# Reboot the machine
+#shutdown -r now
